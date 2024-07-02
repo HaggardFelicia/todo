@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -16,7 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='layout'>{children}</body>
+      
+      <body className='layout'>
+        <header className="header">
+          <Link href="https://next-portfolio-umber-kappa.vercel.app/" target="_blank">
+          <h1 className="logo">Felicia</h1></Link>
+          <h2 className="app-name">To-Do</h2>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

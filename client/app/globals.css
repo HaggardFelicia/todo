@@ -11,6 +11,22 @@
 .layout{
   @apply bg-teal-200 font-urbanist font-medium text-lg;
 }
+/** layout: sets
+  flex properties for the header div
+*/
+.header{
+  @apply flex justify-between py-4 px-8 bg-teal-950 my-auto items-center;
+}
+/* layout: sets
+header logo font size, color, and alignment */
+.logo{
+  @apply bg-gradient-to-b from-red-900 via-red-500 to-red-200 bg-clip-text text-transparent text-4xl font-bold;
+}
+/* layout: sets
+header logo font size, color, and alignment */
+.app-name{
+  @apply text-gray-300 text-2xl font-bold;
+}
 
 /**-----------------------
  * *       Todo Page

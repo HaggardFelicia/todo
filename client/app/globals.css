@@ -2,32 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* font urbanist import */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/**-----------------------
+ * *       Layout Page
+ *------------------------**/
+.layout{
+  @apply bg-teal-200 font-urbanist font-medium text-lg;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/**-----------------------
+ * *       Todo Page
+ *------------------------**/
+/** todo: sets
+  alignment of the body
+*/
+.body{
+  @apply my-5 mx-[10%] md:mx-[20%] lg:mx-[30%]  p-[20px] max-w-full justify-center items-center content-center place-content-center;
+}
+/** todo: sets
+  flex properties for the input container div
+*/
+.flex-div{
+  @apply flex flex-row items-center max-w-sm lg:max-w-lg;
+}
+/** todo: sets
+  alignment of the input div
+*/
+.input-div{
+  @apply  w-full justify-between;
+}
+/** todo: sets
+  task input styles
+*/
+.todo-input{
+  @apply w-[95%] p-2 border-2 bg-gray-500 border-teal-900 rounded-lg placeholder:text-teal-200 text-teal-200 focus:bg-gray-700;
+}
+/** todos: sets
+ info div text color, size, and alignment */
+.todo-info{
+  @apply text-gray-700 pt-[2px] pb-[25px] px-[auto] m-[2px] text-xs font-medium;
+}
+/** todos: sets
+tasks flex, margin, padding, border, border radius, and border color */
+.todos{
+  @apply flex flex-row my-2 max-w-sm lg:max-w-lg border-2 border-teal-900 rounded-lg py-3 pl-5 pr-2 justify-between text-gray-600 font-semibold items-center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.todos-text{
+  @apply items-center my-auto mx-0 p-0;
 }

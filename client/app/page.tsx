@@ -45,7 +45,6 @@ export default function Home() {
 
   return (
     <div className="body">
-      <h1>To-Do List</h1>
       <div className="flex-div">
         <div className=" input-div">
             <input

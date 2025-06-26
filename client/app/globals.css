@@ -10,7 +10,7 @@
  * *       Layout Page
  *------------------------**/
 .layout{
-  @apply bg-primary font-urbanist font-medium text-lg;
+  @apply bg-primary font-urbanist font-medium text-xl lg:text-2xl;
 }
 /** layout: sets
   flex properties for the header div
@@ -59,7 +59,7 @@ header logo font size, color, and alignment */
 /** todos: sets
  info div text color, size, and alignment */
 .todo-info{
-  @apply text-gray-500 pt-[2px] pb-[25px] px-[auto] m-[2px] text-xs font-medium;
+  @apply text-gray-400 pt-[2px] pb-[25px] px-[auto] m-[2px] text-lg font-medium;
 }
 /** todos: sets
 tasks flex, margin, padding, border, border radius, and border color */

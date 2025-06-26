@@ -7,7 +7,7 @@ const CloseBtn=(props:any)=>{
         <button onClick={props.onClick}
         className='my-auto mx-0 p-0 bg-transparent cursor-pointer'>
             <IoClose 
-                className='text-teal-900 text-3xl lg:text-4xl font-bold rounded-lg p-2'/>
+                className='text-teal-400 text-4xl lg:text-5xl font-bold rounded-lg p-2'/>
           </button>
     );
 };

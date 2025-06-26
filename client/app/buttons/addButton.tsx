@@ -6,7 +6,7 @@ const AddBtn=(props:any)=>{
         className=' my-auto mx-0 p-0 bg-transparent cursor-pointer'
         >
             <IoAdd
-                className='text-teal-900 text-5xl lg:text-6xl font-bold rounded-lg p-2'/>
+                className='text-teal-400 text-5xl lg:text-6xl font-bold rounded-lg p-2'/>
           </button>
     );
 };

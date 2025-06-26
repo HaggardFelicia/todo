@@ -8,7 +8,7 @@ const AddBtn=(props: any)=>{
         className=' my-auto bg-transparent cursor-pointer'
         >
             <FaTrashCan
-                className='text-red-700 text-5xl lg:text-6xl font-bold rounded-lg p-2' />
+                className='text-red-600 text-5xl lg:text-6xl font-bold rounded-lg p-2 my-4' />
           </button>
     );
 };
